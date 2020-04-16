@@ -1,14 +1,6 @@
 body {
   background-color: #222831;
 }
-@media only screen and (min-width: 992px) {
-.embed-responsive{
-height:100vh;
-}
-}
-.embed-responsive{
-display:none;
-}
 .w-100 {
   height: 100vh;
 }
