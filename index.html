@@ -28,10 +28,6 @@ margin: 30% 0;
 .lazy-hidden {
     background:#222831 url('loading.gif') no-repeat 50% 50%;
 }
-[data-src]::before {
-  width: 100%;
-  margin: 0 auto;
-}
 @media only screen and (max-width: 600px) {
   .w-100 {
     height: auto;
@@ -51,7 +47,7 @@ margin: 30% 0;
 </head>
 
 <body>
-  <div id="carouselExampleIndicators" class="carousel slide" data-touch="false" data-interval="false" data-ride="carousel">
+  <div id="carouselExampleIndicators" class="carousel slide" data-touch="true" data-interval="false" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -59,7 +55,7 @@ margin: 30% 0;
       <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
     </ol>
-    <div class="carousel-inner" data-u="slides" role="listbox">
+    <div class="carousel-inner" role="listbox">
       <div class="carousel-item active">
         <iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden"  data-src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F5min.crafts%2Fvideos%2F1072362663150078%2F&width=1360&show_text=false&height=734&appId" width="1360" height="734" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
 
