@@ -22,17 +22,20 @@
 .w-100 {
   height: 100vh;
 }
-  
+  .carousel-control-next, .carousel-control-prev {
+margin: 30% 0;
+  }
 .lazy-hidden {
     background:#222831 url('loading.gif') no-repeat 50% 50%;
+}
+[data-src]::before {
+  width: 100%;
+  margin: 0 auto;
 }
 @media only screen and (max-width: 600px) {
   .w-100 {
     height: auto;
     min-height: 220px;
-  }
-  .carousel-control-next, .carousel-control-prev {
-margin: 30% 0;
   }
 
   #carouselExampleIndicators {
@@ -44,20 +47,22 @@ margin: 30% 0;
   }
 }
   </style>
-
-    <script src="jssor.slider.min.js"></script>
-  <!-- lazy Load -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"></script>
-  <script>
-    var options = { $LazyLoading: 1 };
-    var jssor_1_slider = new $JssorSlider$("carouselExampleIndicators", options);
-</script>
 </head>
 
 <body>
+<div id="fb-root"></div>
+  <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
 
-  <div id="carouselExampleIndicators" class="carousel slide" data-interval="false" data-touch="true" data-ride="carousel">
-    <div class="carousel-inner" role="listbox">
+  <div id="carouselExampleIndicators" class="carousel slide" data-interval="false" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner" data-u="slides" role="listbox">
       <div class="carousel-item active">
         <iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden"  data-src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F5min.crafts%2Fvideos%2F1072362663150078%2F&width=1360&show_text=false&height=734&appId" width="1360" height="734" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
 
@@ -90,6 +95,8 @@ margin: 30% 0;
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
