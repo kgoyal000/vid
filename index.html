@@ -92,10 +92,15 @@ margin: 30% 0;
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 <script>
-  $('.live-fb').click(function(){
-    $('._zbd _1agg _42ft').click();
-  });
-  </script>
+
+$('.carousel').on('slide.bs.carousel', function () {
+var vidDefer = document.getElementsByTagName('iframe');
+for (var i=0; i<vidDefer.length; i++) {
+if(vidDefer[i].getAttribute('data-src')) {
+vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+} } 
+})
+</script>
 </body>
 
 </html>
