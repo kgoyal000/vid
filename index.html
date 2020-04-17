@@ -48,6 +48,7 @@ margin: 30% 0;
   }
 }
   </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" charset="utf-8"></script>
 
   <!-- lazy Load -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"></script>
@@ -97,11 +98,32 @@ margin: 30% 0;
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-  <!--Touch Swipe-->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js'></script>
-
-  <!--Prefixfree-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<script type="text/javascript">
+  ;(function($, window, document){
+'use strict';
+var $slider = $('#carouselExampleIndicators'), hammer = new Hammer($slider.get(0));
+$slider.find('img').each( (index, elem ) => {
+  $(elem).prop('draggable', false);
+} );
+$slider.carousel();
+$slider.find(".carousel-control-prev").click( (e) => {
+  e.preventDefault();
+  $slider.carousel("prev");
+} );
+$slider.find(".carousel-control-next").click( (e) => {
+  e.preventDefault();
+  $slider.carousel("next");
+} );
+hammer.on("panleft panright", (e) => {
+  e.preventDefault();
+  if( e.type == 'panleft' ) $slider.carousel("next");
+  if( e.type == 'panright' ) $slider.carousel("prev");
+} );
+$slider.find('.carousel-indicators li').click( (e) => {
+  $slider.carousel( $(e.target).data('slide-to') );
+} );
+})(jQuery, window, document);
+  </script>
 </body>
 
 </html>
