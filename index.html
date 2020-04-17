@@ -26,10 +26,6 @@
 .lazy-hidden {
     background:#222831 url('loading.gif') no-repeat 50% 50%;
 }
-[data-src]::before {
-  width: 100%;
-  margin: 0 auto;
-}
 @media only screen and (max-width: 600px) {
   .w-100 {
     height: auto;
@@ -49,8 +45,13 @@ margin: 30% 0;
 }
   </style>
 
+    <script src="jssor.slider.min.js"></script>
   <!-- lazy Load -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"></script>
+  <script>
+    var options = { $LazyLoading: 1 };
+    var jssor_1_slider = new $JssorSlider$("carouselExampleIndicators", options);
+</script>
 </head>
 
 <body>
