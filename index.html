@@ -7,6 +7,109 @@
 <!--<![endif]-->
 
 <head>
+	<style>
+		body {
+  background-color: #222831;
+}
+/* for live stream width only large screen*/
+@media only screen and (min-width: 992px) {
+  .live-fb {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+}
+
+/* Full height of iframe on large screen */
+.w-100 {
+  height: 100vh;
+  background-color: #222831 !important;
+}
+
+/* Center Iframe on mobile */
+#carouselExampleIndicators {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Slider above iframe */
+.carousel-item::after {
+  content: "";
+  background: transparent;
+  width: 100%;
+  height: 30%;
+  min-height: 1px;
+  position: absolute;
+  top: 0;
+}
+
+/* for live stream width except large screen */
+.live-fb {
+  width: 100% !important;
+  margin: 0 auto;
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+  .w-100 {
+    height: 100vh !important;
+    background-color: #222831 !important;
+  }
+}
+
+/* Loader */
+.lazy-hidden {
+  background: #222831 url('loading.gif') no-repeat 50% 50%;
+}
+
+/* Space for controls to work */
+.carousel-control-next, .carousel-control-prev {
+  margin: 10% 0;
+}
+
+@media only screen and (max-width: 639px) {
+  .w-100 {
+    height: auto;
+    min-height: 210px;
+  }
+
+  /* Space for controls to work */
+  .carousel-control-next, .carousel-control-prev {
+    margin: 30% 0;
+  }
+
+}
+
+@media (min-width: 767px) and (max-width: 1025px) and (orientation: portrait) {
+  .w-100 {
+    height: auto;
+    min-height: 42vh !important;
+  }
+
+  /* Space for controls to work */
+  .carousel-control-next, .carousel-control-prev {
+    margin: 30% 0;
+  }
+}
+
+@media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .w-100 {
+    height: auto;
+    min-height: 75vh;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .w-100 {
+    height: auto;
+    min-height: 75vh;
+  }
+}
+	</style>
   <!-- All Meta Tags -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="utf-8">
@@ -18,8 +121,6 @@
   <title>example</title>
   <!-- Bootstrap Cdn -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <!-- Custom Css -->
-  <link rel="stylesheet" href="css/styles.css">
   <!-- Lazy load library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"></script>
   <!-- Reversing lazyload to stop video on changing -->
