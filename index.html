@@ -7,108 +7,119 @@
 <!--<![endif]-->
 
 <head>
-
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+  <!-- All Meta Tags -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Video</title>
+  <meta charset="utf-8">
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-  body,.w-100 {
-  background-color: #222831 !important;
-}
-.w-100 {
-  height: 100vh;
-}
-  .live-fb {
-      width: 85%!important;
-    margin: 0 auto;
-}
-  .carousel-item::after { content: ""; background: transparent; width: 100%; height: 30%; min-height: 1px; position: absolute; top: 0; }
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
 
-  
-.lazy-hidden {
-    background:#222831 url('loading.gif') no-repeat 50% 50%;
-}
-   .carousel-control-next, .carousel-control-prev {
-margin: 10% 0;
-  }
-@media only screen and (max-width: 600px) {
-  .w-100 {
-    height: auto;
-    min-height: 220px;
-  }
-   .live-fb {
-      width: 100%!important;
-    margin: 0 auto;
-}
-  .carousel-control-next, .carousel-control-prev {
-margin: 30% 0;
-  }
-
-  #carouselExampleIndicators {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-  </style>
+  <title>example</title>
+  <!-- Bootstrap Cdn -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Custom Css -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Lazy load library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"></script>
+  <!-- Reversing lazyload to stop video on changing -->
+
 </head>
 
 <body>
+  <!-- Carousel Start -->
   <div id="carouselExampleIndicators" class="carousel slide" data-touch="true" data-interval="false" data-ride="carousel">
-    
+    <ol class="carousel-indicators" style="display:none">
+   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="13"></li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="14"></li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="15"></li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="16"></li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="17"></li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="18"></li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="19"></li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="20"></li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="21"></li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="22"></li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="23"></li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="24"></li>
+   <li data-target="#carouselExampleIndicators" data-slide-to="25"></li>
+ </ol>
     <div class="carousel-inner" role="listbox">
-      <div class="carousel-item active">
-        <iframe data-autoplay="false" class="embed-responsive-item d-block w-100 lazyload live-fb lazy-hidden"  data-src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FGamevik%2Fvideos%2F233469961068348%2F&show_text=false&width=734&height=413&appId" width="734" height="413" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowFullScreen="true"></iframe>
-
+      <div class="carousel-item  active">
+        <iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden" data-src="https://www.youtube.com/embed/XHsrxgoESz8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
       </div>
       <div class="carousel-item">
-        <iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden" data-src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F5min.crafts%2Fvideos%2F598327027702400%2F&width=1360&show_text=false&height=734&appId" width="1360" height="734" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen="true"></iframe>
+        <iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden" data-src="https://www.youtube.com/embed/L2OsgmirBwo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
       </div>
-      <div class="carousel-item">
-        <iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden" data-src="https://www.youtube.com/embed/4m7msadL5iA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div class="carousel-item">
-        <iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden" data-src="https://www.youtube.com/embed/L2OsgmirBwo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div class="carousel-item">
-        <iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden" data-src="https://www.youtube.com/embed/XHsrxgoESz8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
+	<div class="carousel-item"><!-- Youtube Iframes --><iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden" data-src="https://www.youtube.com/embed/rgeLp2TX36c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	<div class="carousel-item"><!-- Youtube Iframes --><iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden" data-src="https://www.youtube.com/embed/F109TZt3nRc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	<div class="carousel-item"><!-- Youtube Iframes --><iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden" data-src="https://www.youtube.com/embed/XL_J6XdH1qA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	<div class="carousel-item"><!-- Youtube Iframes --><iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden" data-src="https://www.youtube.com/embed/BDpxPFqKJV0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	<div class="carousel-item"><!-- Youtube Iframes --><iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden" data-src="https://www.youtube.com/embed/IoP-ZBk-4vs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	<div class="carousel-item"><!-- Youtube Iframes --><iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden" data-src="https://www.youtube.com/embed/V9_emBny1IM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	<div class="carousel-item"><!-- Youtube Iframes --><iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden" data-src="https://www.youtube.com/embed/G6Ldievv6_k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	<div class="carousel-item"><!-- Youtube Iframes --><iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden" data-src="https://www.youtube.com/embed/tXJUP0qa_cM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	<div class="carousel-item"><!-- Youtube Iframes --><iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden" data-src="https://www.youtube.com/embed/B7zHkw0VES4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	<div class="carousel-item"><!-- Youtube Iframes --><iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden" data-src="https://www.youtube.com/embed/CsYVvDkFkDU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	<div class="carousel-item"><!-- Youtube Iframes --><iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden" data-src="https://www.youtube.com/embed/JlPa93kznEs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	<div class="carousel-item"><!-- Youtube Iframes --><iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden" data-src="https://www.youtube.com/embed/J8JcRFG2tqw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	<div class="carousel-item"><!-- Youtube Iframes --><iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden" data-src="https://www.youtube.com/embed/5fHKwmawLtE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	<div class="carousel-item"><!-- Youtube Iframes --><iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden" data-src="https://www.youtube.com/embed/AiF_6YT_ZwY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	<div class="carousel-item"><!-- Youtube Iframes --><iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden" data-src="https://www.youtube.com/embed/-sOp2UaGGS0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	<div class="carousel-item"><!-- Youtube Iframes --><iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden" data-src="https://www.youtube.com/embed/OTcvYeZkyyQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	<div class="carousel-item"><!-- Youtube Iframes --><iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden" data-src="https://www.youtube.com/embed/UVX0yG-reDs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	<div class="carousel-item"><!-- Youtube Iframes --><iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden" data-src="https://www.youtube.com/embed/tSFtfI78bI8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	<div class="carousel-item"><!-- Youtube Iframes --><iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden" data-src="https://www.youtube.com/embed/H552Nor1ZC8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	<div class="carousel-item"><!-- Youtube Iframes --><iframe class="embed-responsive-item d-block w-100 lazyload lazy-hidden" data-src="https://www.youtube.com/embed/nwksDi6JNsk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <!-- Previous Arrow -->
+    <a class="carousel-control-prev carousel-control1" href="#carouselExampleIndicators" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <!-- Next Arrow -->
+    <a class="carousel-control-next carousel-control1" href="#carouselExampleIndicators" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
   </div>
-  
+
 
   <!-- Bootstrap js -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-<script>
-
-$('.carousel').on('slide.bs.carousel', function () {
-var vidDefer = document.getElementsByTagName('iframe');
-for (var i=0; i<vidDefer.length; i++) {
-if(vidDefer[i].getAttribute('data-src')) {
-vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
-} } 
+  <script>
+  $('#carouselExampleIndicators').on('slide.bs.carousel', function (e) {
+    var ele = $('#carouselExampleIndicators .carousel-indicators li.active');
+  $('.carousel').on('slid.bs.carousel', function() {
+    var vidDefer = document.getElementsByTagName('iframe');
+    for (var i = ele.data('slideTo'); i < vidDefer.length; i++) {
+      if (vidDefer[i].getAttribute('data-src')) {
+        vidDefer[i].setAttribute('src', vidDefer[i].getAttribute('data-src'));
+      }
+          break;
+    }
+  });
 })
-</script>
+  </script>
 </body>
 
 </html>
